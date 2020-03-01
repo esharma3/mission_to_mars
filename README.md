@@ -1,6 +1,6 @@
 # Mission to Mars
 
-![mission_to_mars](Images/mission_to_mars.png)
+![mission_to_mars](images/mission_to_mars.jfif)
 
 A web application that scrapes various websites for data related to the Mission to Mars and uses MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs below.
 
