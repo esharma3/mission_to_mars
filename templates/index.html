@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Mission to Mars
+	</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+	<div class="container-fluid">
+
+		<div class="row" id="mars_row">
+			<div class="col-12">
+				<div class="header" id="header_box">
+					<h1 class="text-info">Mission to Mars</h1>  
+					<p><a class="btn btn-primary btn-lg" href="/scrape" role="button" id="mars_button">Scrape New Data</a></p>
+				</div>
+			</div>
+		</div>
+		 
+		<div class="row" id="mars_row">
+			<div class="col-md-12">
+				<h2 class="text-info">Latest Mars News</h2>
+				<h5>{{ mars.latest_news_title }}</h5>
+				 <p>{{ mars.news_para }}</p>
+			</div>
+		</div>
+
+		<div class="row" id="mars_row">
+
+			<div class="col-md-8">
+				<h2 class="text-info">Featured Mars Image</h2>
+				<img src = "{{ mars.featured_image_url }}" alt="Featured Mars Image"/>
+			</div> 
+
+			<div class = "col-md-4">
+				<div class="panel panel-default" id="panel">
+					<h4>Current Weather on Mars</h4>
+                	<p>{{mars.mars_weather}}</p><br>
+                </div>
+                <h4>Mars Facts</h4>
+               	<p>{{mars.mars_facts | safe}}</p>
+            </div>
+
+		</div>
+
+    	<div class="row" id="mars_hemisphere">
+    		<div class = "col-md-12">
+	       		<h2 class="text-info">Mars Hemispheres</h2>
+	        	{% for hemisphere in mars.hemisphere_img_urls %}
+	         	 	<div class="col-md-6">
+	            		<div class="thumbnail">
+	              			<img src="{{ hemisphere.img_url }}" alt="Mars Thumbnails"/>
+	              			<h3>{{ hemisphere.title }}</h3>
+	              		</div>
+	          		</div>
+	          	{% endfor %}
+	        </div>
+     	</div>
+
+	</div>
+  
+</body>
+</html>
