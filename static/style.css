@@ -90,15 +90,19 @@ table {
     padding: 5px;
 }
 
+img {
+	width: 80%;
+}
+
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: grey;
+  height: 25px;
+  background-color: black;
   color: white;
   text-align: center;
-  font-weight: bold;
 }
 
 
@@ -107,9 +111,8 @@ table {
 @media (max-width: 992px) {
 
 	#header_box {
-		 background-color: #1b213d;
-		 height: 25vh;
-		 padding: 15px;
+		height: 25vh;
+		padding: 15px;
 	}
 
 	#header_box .btn {
@@ -129,6 +132,16 @@ table {
 	    text-align: center;
 	    padding-top: 10px;
 	}
+
+	img {
+	width: 80%;
+	}
+
+	#mars_hemisphere h2 {
+		text-align: center;
+		padding-bottom: 25px;
+		font-size: 30px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -139,9 +152,8 @@ table {
 	}
 
 	#header_box {
-		 background-color: #1b213d;
-		 height: 25vh;
-		 padding: 10px;
+		height: 25vh;
+		padding: 10px;
 	}
 
 	#mars_row {
@@ -213,6 +225,18 @@ table {
 	    font-size: 15px;
 	    padding: 5px;
 	}
+
+	#mars_hemisphere h2 {
+		text-align: center;
+		padding-bottom: 25px;
+		font-size: 25px;
+	}
+
+	#mars_hemisphere h3 {
+		text-align: center;
+		padding-bottom: 25px;
+		font-size: 20px;
+	}
 }
 
  
@@ -224,8 +248,7 @@ table {
 	}
 
 	#header_box {
-		 background-color: #1b213d;
-		 height: 20vh;
+		height: 20vh;
 	}
 
 	#mars_row {
@@ -296,6 +319,18 @@ table {
 	table {
 	    font-size: 12px;
 	    padding: 5px;
+	}
+
+	#mars_hemisphere h2 {
+		text-align: center;
+		padding-bottom: 25px;
+		font-size: 20px;
+	}
+
+	#mars_hemisphere h3 {
+		text-align: center;
+		padding-bottom: 25px;
+		font-size: 15px;
 	}
 }
 
