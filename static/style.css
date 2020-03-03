@@ -1,10 +1,7 @@
-@import url('https://font.googleapis.com/css?family=Poppins:400,500,700');
-
 html, body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Poppins', sans-serif;
-	/*background-color: #cdd7d6; */
 }
 
 .container-fluid {
@@ -27,7 +24,7 @@ html, body {
     color: white;
     text-align: center;
     padding-top: 20px;
-   }
+}
 
 .container-fluid .btn{
 	margin: 20px auto;
@@ -36,7 +33,7 @@ html, body {
  	text-align: center;
  	color: black;
  	background-color: white;
-   }
+}
 
 .container-fluid h2 {
 	color: black;
@@ -157,7 +154,7 @@ table {
 	    color: white;
 	    text-align: center;
 	    padding-top: 10px;
-	   }
+	}
 
 	#header_box .btn {
 		margin: 0 auto;
@@ -167,7 +164,7 @@ table {
 	 	text-align: center;
 	 	color: black;
 	 	background-color: white;
-	   }
+	}
 
 	.container-fluid h2 {
 		color: black;
@@ -241,7 +238,7 @@ table {
 	    color: white;
 	    text-align: center;
 	    padding-top: 15px;
-	   }
+	}
 
 	#header_box .btn {
 		margin: 0 auto;
@@ -251,7 +248,7 @@ table {
 	 	text-align: center;
 	 	color: black;
 	 	background-color: white;
-	   }
+	}
 
 	.container-fluid h2 {
 		color: black;
