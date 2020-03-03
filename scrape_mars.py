@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from splinter import Browser
 import pandas as pd
-from pprint import pprint
 
 
 def scrape():
@@ -17,11 +16,10 @@ def scrape():
 	driver = webdriver.Firefox()
 	driver.get(URL)
 	html = driver.page_source
-	# driver.implicitly_wait(20)
+	driver.implicitly_wait(20)
 	driver.close()
 
 	soup = BeautifulSoup(html, "lxml")
-	# extracting the latets news title and teaser
 	latest_news = soup.find("div", class_="list_text")
 	latest_news_title = latest_news.find("div", class_="content_title").text
 	latest_news_teaser = latest_news.find("div", class_="article_teaser_body").text
@@ -92,6 +90,8 @@ def scrape():
 	    hemisphere_dict["img_url"] = image.find("a")["href"]
 
 	    hemisphere_image_urls.append(hemisphere_dict)
+	    
+	browser.quit()
 
 
 	# creating a dictionary of Mars data scraped
