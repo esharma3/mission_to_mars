@@ -17,13 +17,12 @@ def home_page():
 @app.route("/scrape")
 def scrape_data():
 	mars_dict = scrape()
-	print(mars_dict)
 	db.mars_collection.update({}, mars_dict, upsert=True)
-	return redirect('/', code=302)
+	return redirect("/", code=302)
 
 
 
-#  main
+#  main ----------------------------------------------------------------------
 
 if __name__ == "__main__":
 	app.run(debug=True)
